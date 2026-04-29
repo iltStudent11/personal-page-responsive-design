@@ -20,7 +20,6 @@ header, footer {
 
 
 /* Headings */
-/* Headings */
 h1, h2, h3 {
   color: #ffffff;
   margin-bottom: 12px;
@@ -37,7 +36,6 @@ h3 {
   font-size: 1.5rem;
 }
 
-/* Paragraphs and text */
 /* Paragraphs and text */
 p {
   margin-bottom: 22px;
@@ -129,5 +127,24 @@ input:focus, textarea:focus, select:focus {
   }
   .card {
     padding: 1em;
+  }
+}
+
+/* Desktop breakpoint for large screens */
+@media (min-width: 1025px) {
+  body {
+    font-size: 20px;
+    padding: 48px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2.25rem;
+  }
+  .card {
+    padding: 2.5em;
   }
 }
