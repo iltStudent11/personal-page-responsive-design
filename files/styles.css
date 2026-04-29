@@ -1,36 +1,133 @@
 Initial commit of styles.css
 /* General page styles */
 body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  color: #333;
-  background-color: #f4f4f4;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  line-height: 1.7;
+  color: #222;
+  background-color: #f9fafb;
   margin: 0;
-  padding: 20px;
+  padding: 24px;
+  font-size: 18px;
 }
 
+/* Ensure sufficient color contrast for accessibility */
+header, footer {
+  background: #222;
+  color: #fff;
+  padding: 1.5rem 0;
+  text-align: center;
+}
+
+
+/* Headings */
 /* Headings */
 h1, h2, h3 {
-  color: #2c3e50;
-  margin-bottom: 10px;
+  color: #1a237e;
+  margin-bottom: 12px;
+  letter-spacing: 0.02em;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.5rem;
 }
 
 /* Paragraphs and text */
+/* Paragraphs and text */
 p {
-  margin-bottom: 20px;
+  margin-bottom: 22px;
+  max-width: 70ch;
 }
+
 
 /* Links */
+/* Links */
 a {
-  color: #3498db;
-  text-decoration: none;
+  color: #1565c0;
+  text-decoration: underline;
+  transition: color 0.2s;
 }
 
-a:hover {
-  text-decoration: underline;
+/* Focus and hover states for accessibility */
+a:hover, a:focus {
+  color: #0d47a1;
+  outline: 2px solid #0d47a1;
+  outline-offset: 2px;
 }
 
 /* Lists */
 ul {
-  padding-left: 20px;
+  padding-left: 24px;
+  margin-bottom: 20px;
+}
+
+/* Buttons */
+button, .btn {
+  font-size: 1rem;
+  padding: 0.75em 1.5em;
+  border-radius: 0.375em;
+  border: none;
+  background: #1565c0;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+button:hover, .btn:hover, button:focus, .btn:focus {
+  background: #0d47a1;
+  outline: 2px solid #0d47a1;
+  outline-offset: 2px;
+}
+
+/* Form accessibility */
+label {
+  font-weight: 600;
+  margin-bottom: 0.5em;
+  display: block;
+}
+input, textarea, select {
+  width: 100%;
+  padding: 0.75em;
+  margin-bottom: 1.25em;
+  border: 1.5px solid #bdbdbd;
+  border-radius: 0.375em;
+  font-size: 1rem;
+  background: #fff;
+  color: #222;
+  transition: border-color 0.2s;
+}
+input:focus, textarea:focus, select:focus {
+  border-color: #1565c0;
+  outline: 2px solid #1565c0;
+  outline-offset: 2px;
+}
+
+/* Card for form (if not using Bootstrap) */
+.card {
+  background: #fff;
+  border-radius: 0.5em;
+  box-shadow: 0 2px 8px rgba(30, 34, 126, 0.08);
+  padding: 2em;
+  margin-bottom: 2em;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  body {
+    font-size: 16px;
+    padding: 10px;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  .card {
+    padding: 1em;
+  }
 }
