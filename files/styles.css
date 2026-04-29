@@ -12,7 +12,7 @@ body {
 
 /* Ensure sufficient color contrast for accessibility */
 header, footer {
-  background: #222;
+  background: #000000;
   color: #fff;
   padding: 1.5rem 0;
   text-align: center;
@@ -22,7 +22,7 @@ header, footer {
 /* Headings */
 /* Headings */
 h1, h2, h3 {
-  color: #1a237e;
+  color: #ffffff;
   margin-bottom: 12px;
   letter-spacing: 0.02em;
 }
