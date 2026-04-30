@@ -1,3 +1,19 @@
+/* Centered image styling */
+.center-image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.center-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+}
 Initial commit of styles.css
 /* General page styles */
 body {
@@ -12,7 +28,7 @@ body {
 
 /* Ensure sufficient color contrast for accessibility */
 header, footer {
-  background: #000000;
+  background: #014707;
   color: #fff;
   padding: 1.5rem 0;
   text-align: center;
@@ -43,7 +59,6 @@ p {
 }
 
 
-/* Links */
 /* Links */
 a {
   color: #1565c0;
@@ -128,6 +143,15 @@ input:focus, textarea:focus, select:focus {
   .card {
     padding: 1em;
   }
+  .center-image {
+    width: 100vw;
+    max-width: none;
+    height: 50vw;
+    object-fit: cover;
+    object-position: center center;
+    border-radius: 0;
+    margin-left: calc(-1 * (100vw - 100%) / 2);
+  }
 }
 
 /* Desktop breakpoint for large screens */
@@ -146,5 +170,12 @@ input:focus, textarea:focus, select:focus {
   }
   .card {
     padding: 2.5em;
+  }
+  .center-image {
+    max-width: 350px;
+    height: auto;
+    border-radius: 12px;
+    margin: 0 auto;
+    display: block;
   }
 }
